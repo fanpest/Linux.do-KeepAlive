@@ -49,7 +49,7 @@ if missing_configs:
 USERNAME = [line.strip() for line in username_env.splitlines() if line.strip()]
 PASSWORD = [line.strip() for line in password_env.splitlines() if line.strip()]
 SCROLL_DURATION = int(os.getenv("SCROLL_DURATION", 0))
-VIEW_COUNT = int(os.getenv("VIEW_COUNT", 1000))
+VIEW_COUNT = int(os.getenv("VIEW_COUNT", 3000))
 HOME_URL = os.getenv("HOME_URL", "https://linux.do/")
 CONNECT_URL = os.getenv("CONNECT_URL", "https://connect.linux.do/")
 
